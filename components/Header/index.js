@@ -16,7 +16,7 @@ export default function Header() {
             <nav className="pt-3">
                <ul className="flex">
                   {navLinks.map(({ path, text }) => (
-                     <li>
+                     <li key={text}>
                         <a className="text-white p-3" href={path}>
                            {text}
                         </a>
