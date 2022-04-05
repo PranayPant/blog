@@ -1,15 +1,14 @@
-import Navbar from '@components/Navbar'
+import Footer from '@components/Footer'
+import Header from '@components/Header'
 
 export default function Layout({ children }) {
    return (
-      <div>
-         <main className="h-screen">
-            <h1 className="text-center text-6xl font-bold py-10">
-               Young Gunz Boxing
-            </h1>
-            <Navbar />
-            <div className="h-full flex flex-col">{children}</div>
+      <div className="relative">
+         <Header />
+         <main>
+            <div className="flex flex-col">{children}</div>
          </main>
+         <Footer />
       </div>
    )
 }

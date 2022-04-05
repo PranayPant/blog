@@ -4,17 +4,40 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+   padding: 0;
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+   color: inherit;
+   text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+@layer base {
+   h1,
+   h2 {
+      @apply py-10 capitalize text-center text-5xl md:text-7xl font-bold;
+   }
+
+   section {
+      @apply mb-20;
+   }
+}
+
+@layer components {
+   .contain {
+      @apply px-5 md:px-10;
+   }
+   .btn-link {
+      @apply bg-blue-500 hover:bg-blue-700 text-white font-normal py-2 px-4 rounded;
+   }
+   .btn-primary {
+      @apply bg-blue-500 hover:bg-blue-700 text-white text-center font-normal rounded;
+   }
 }
