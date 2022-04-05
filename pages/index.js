@@ -27,6 +27,7 @@ export default function Home() {
                name="description"
                content="Boxing club dedicated to boxing fundamentals, home of peekaboo boxing"
             />
+            <meta property="og:image" content={teamImgURL} />
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <section id="hero" className="h-screen">
@@ -40,13 +41,13 @@ export default function Home() {
                   crop: 'entropy',
                }}
             >
-               <blockquote className="w-full flex flex-col place-items-center py-10 text-center text-white font-semibold text-3xl leading-loose md:text-5xl md:leading-normal">
+               <blockquote className="w-full flex flex-col place-items-center py-10 text-center text-white font-semibold text-3xl leading-normal md:text-5xl md:leading-normal">
                   <span className="w-3/4">
                      “Victorious warriors win first and then go to war, while
                      defeated warriors go to war first and then seek to win.”
                   </span>
                   <br />
-                  <span className="relative left-32 md:left-48 lg:left-96">
+                  <span className="relative left-20 md:left-48 lg:left-96">
                      Sun Tzu
                   </span>
                </blockquote>
