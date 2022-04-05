@@ -6,7 +6,7 @@ export default function Footer() {
       <footer className="h-32 bg-slate-800 text-white flex justify-center">
          <div className="w-fit md:w-full h-full px-10 flex flex-col md:flex-row justify-around md:justify-between items-start md:items-center">
             <div className="flex space-x-4">
-               <span>Email:</span>
+               <span className="md:w-auto w-20">Email:</span>
                <a
                   className="hover:cursor-pointer"
                   href={`mailto:christinyoung1@gmail.com?subject=${encodeURI(
@@ -17,11 +17,11 @@ export default function Footer() {
                </a>
             </div>
             <div className="flex space-x-4">
-               <span>Phone:</span>
+               <span className="md:w-auto w-20">Phone:</span>
                <span>(479)-202-2386</span>
             </div>
             <div className="flex space-x-4">
-               <span className="mt-1">Follow Us:</span>
+               <span className="mt-1 md:w-auto w-20">Follow Us:</span>
                <div className="flex space-x-2">
                   <a
                      target="_blank"
