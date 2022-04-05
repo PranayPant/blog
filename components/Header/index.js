@@ -5,7 +5,7 @@ export default function Header() {
          text: 'About Us',
       },
       {
-         path: '#donate-title',
+         path: '#donate',
          text: 'Support Us',
       },
    ]
