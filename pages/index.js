@@ -43,6 +43,7 @@ export default function Home() {
                imgixParams={{
                   w: 1920,
                   h: 1200,
+                  bri: -15,
                }}
             >
                <blockquote className="hidden w-full flex flex-col place-items-center py-10 text-center text-white font-semibold text-3xl leading-normal md:text-5xl md:leading-normal">
